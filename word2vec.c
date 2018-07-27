@@ -667,8 +667,8 @@ void *TrainModelThread(void *id) {
          word_count_actual / ((real)(now - start + 1) / (real)CLOCKS_PER_SEC * 1000));
         fflush(stdout);
       }
-      alpha = starting_alpha * (1 - word_count_actual / (real)(iter * train_words + 1));
-      if (alpha < starting_alpha * 0.0001) alpha = starting_alpha * 0.0001;
+      //alpha = starting_alpha * (1 - word_count_actual / (real)(iter * train_words + 1));
+      //if (alpha < starting_alpha * 0.0001) alpha = starting_alpha * 0.0001;
     }
     
     // This 'if' block retrieves the next sentence from the training text and
